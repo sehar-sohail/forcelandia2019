@@ -209,22 +209,4 @@
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
-    <webLinks>
-        <fullName>Get_Random_Recipe</fullName>
-        <availability>online</availability>
-        <displayType>button</displayType>
-        <hasMenubar>false</hasMenubar>
-        <hasScrollbars>true</hasScrollbars>
-        <hasToolbar>false</hasToolbar>
-        <height>600</height>
-        <isResizable>true</isResizable>
-        <linkType>page</linkType>
-        <masterLabel>Get Random Recipe</masterLabel>
-        <openType>newWindow</openType>
-        <page>RecipeRandomizer</page>
-        <position>none</position>
-        <protected>false</protected>
-        <showsLocation>false</showsLocation>
-        <showsStatus>false</showsStatus>
-    </webLinks>
 </CustomObject>

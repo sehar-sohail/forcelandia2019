@@ -1,5 +1,0 @@
-<apex:page standardController="Recipe__c" extensions="recipeRandomizerExtension" action="{!getRandomRecipe}">
-    <apex:form >
-        <apex:inputHidden value="{!Recipe__c.Id}"/>
-    </apex:form>
-</apex:page>
