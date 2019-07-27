@@ -178,16 +178,6 @@
         <trackTrending>false</trackTrending>
         <type>Url</type>
     </fields>
-    <fields>
-        <fullName>Prep_Time__c</fullName>
-        <externalId>false</externalId>
-        <label>Prep Time</label>
-        <length>80</length>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>Recipe</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
