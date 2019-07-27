@@ -49,6 +49,24 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <compactLayouts>
+        <fullName>Recipe</fullName>
+        <fields>Name</fields>
+        <fields>Category__c</fields>
+        <fields>Cook_Time__c</fields>
+        <fields>Serving__c</fields>
+        <label>Recipe</label>
+    </compactLayouts>
+    <fields>
+        <fullName>Author__c</fullName>
+        <externalId>false</externalId>
+        <label>Author</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <fields>
         <fullName>Category__c</fullName>
         <externalId>false</externalId>
@@ -66,15 +84,102 @@
                     <label>Appetizer</label>
                 </value>
                 <value>
+                    <fullName>Salad</fullName>
+                    <default>false</default>
+                    <label>Salad</label>
+                </value>
+                <value>
+                    <fullName>Soup</fullName>
+                    <default>false</default>
+                    <label>Soup</label>
+                </value>
+                <value>
+                    <fullName>Meat</fullName>
+                    <default>false</default>
+                    <label>Meat</label>
+                </value>
+                <value>
+                    <fullName>Poultry</fullName>
+                    <default>false</default>
+                    <label>Poultry</label>
+                </value>
+                <value>
+                    <fullName>Seafood</fullName>
+                    <default>false</default>
+                    <label>Seafood</label>
+                </value>
+                <value>
+                    <fullName>Pasta</fullName>
+                    <default>false</default>
+                    <label>Pasta</label>
+                </value>
+                <value>
+                    <fullName>Side</fullName>
+                    <default>false</default>
+                    <label>Side</label>
+                </value>
+                <value>
                     <fullName>Dessert</fullName>
                     <default>false</default>
                     <label>Dessert</label>
                 </value>
+                <value>
+                    <fullName>Sauce</fullName>
+                    <default>false</default>
+                    <label>Sauce</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
+    <fields>
+        <fullName>Cook_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Cook Time</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ingredients__c</fullName>
+        <externalId>false</externalId>
+        <label>Ingredients</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Instructions__c</fullName>
+        <externalId>false</externalId>
+        <label>Instructions</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Serving__c</fullName>
+        <externalId>false</externalId>
+        <label>Serving</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Source</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayoutAssignment>Recipe</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
@@ -91,7 +196,12 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Recipes</pluralLabel>
-    <searchLayouts />
+    <searchLayouts>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <listViews>
