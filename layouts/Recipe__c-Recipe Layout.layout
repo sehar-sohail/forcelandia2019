@@ -29,6 +29,10 @@
                 <behavior>Edit</behavior>
                 <field>Cook_Time__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Prep_Time__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
